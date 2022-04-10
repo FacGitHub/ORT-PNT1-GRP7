@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url("images/maderas.png");
+  background-repeat: repeat-6;
+}
+
+.container {
+  padding: 64px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+
+
+
+/* Responsive */
+* {box-sizing: border-box;}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+/* Responsive delimiter*/
+
+.center{
+  text-align: center;
+}
+
+#PieDePagina a:hover {
+  color: mediumslateblue;
+}
+
+a{
+  color: whitesmoke;
+}
+
+footer{
+  background-color: black;
+}
+
+h1{
+    color: azure;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center; 
+}
+
+h2{
+    color: blue;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-decoration: underline; */
+    text-align: center; 
+}
+
+h2:hover {
+  color:darkcyan
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  opacity: 0.5;
+  padding: 5px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  border-radius: 20%;
+  opacity: 1;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  text-align: center;
+}
+
+ul, li {
+  /* background: #cce5ff; */
+  color: darkblue;
+  margin: 5px;
+  font-family: verdana;
+  font-size: 20px;
+  text-align: center;
+}
+  /* jquery scroll down para hacer el efecto de bajada */
+
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
